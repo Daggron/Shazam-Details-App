@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+
+    <ImageView
+        android:id="@+id/shazam"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/shazam" />
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/shazamtext"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loc" />
+
+    <TextView
+        android:id="@+id/shazamtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catch Shazam with friends and family"
+        android:textAlignment="center"
+        android:textColor="#e6891d"
+        android:textSize="36dp"
+        android:layout_below="@id/shazam"/>
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/location"
+        android:layout_below="@id/shazamtext"
+        android:text="PVR Cinemas Chandigarh"
+        android:textSize="26dp"
+        android:layout_marginLeft="20dp"/>
+
+
+     <TextView
+         android:id="@+id/cinemas"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Only in Cinemas"
+         android:layout_below="@id/info"
+         android:textAlignment="center"
+         android:textSize="20sp"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="On April 5"
+        android:layout_below="@id/cinemas"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#FF040B"/>
+
+</RelativeLayout>
